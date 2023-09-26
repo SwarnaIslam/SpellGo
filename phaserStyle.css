@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.gameContainer{
+    align-self: center;
+}
+@font-face {
+    font-family: PressStart;
+    src: url('images/font/PressStart2P-Regular.ttf') ;
+}
+@font-face {
+    font-family: CustomFont;
+    src: url('images/font/Kanit-Regular.ttf');
+}
+@font-face {
+    font-family: WizardFont;
+    src: url('images/font/JollyLodger-Regular.ttf');
+}
