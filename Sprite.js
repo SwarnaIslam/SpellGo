@@ -86,9 +86,9 @@ class Sprite {
       x,y,
       this.gameObject.viewSize,this.gameObject.viewSize
     )
-    ctx.strokeStyle = "red"; // set border color
-    ctx.lineWidth = 2; // set border width
-    ctx.strokeRect(x, y, this.gameObject.viewSize,this.gameObject.viewSize ); 
+    // ctx.strokeStyle = "red"; // set border color
+    // ctx.lineWidth = 2; // set border width
+    // ctx.strokeRect(x, y, this.gameObject.viewSize,this.gameObject.viewSize ); 
     this.updateAnimationProgress();
   }
   drawDynamic(ctx){
@@ -105,9 +105,9 @@ class Sprite {
       x,y,
       this.frameSize+(this.frameSize==32?16:0),this.frameSize+(this.frameSize==32?16:0)
     )
-    ctx.strokeStyle = "red"; // set border color
-    ctx.lineWidth = 2; // set border width
-    ctx.strokeRect(x, y, this.frameSize+(this.frameSize==32?16:0), this.frameSize+(this.frameSize==32?16:0)); 
+    // ctx.strokeStyle = "red"; // set border color
+    // ctx.lineWidth = 2; // set border width
+    // ctx.strokeRect(x, y, this.frameSize+(this.frameSize==32?16:0), this.frameSize+(this.frameSize==32?16:0)); 
     this.updateAnimationProgress();
   }
 }

@@ -151,8 +151,8 @@ window.OverworldMaps = {
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
-        x: utils.withGrid(96),
-        y: utils.withGrid(62),
+        x: utils.withGrid(62),
+        y: utils.withGrid(80),
         viewSize:48
       }),
       npcA: new Person({
@@ -163,7 +163,20 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              { type: "textMessage", text: "Sort the stairs to go into the library", faceHero: "npcA" },
+              { 
+                type: "textMessage", 
+                faceHero: "npcA",
+                text:[
+                  {
+                    string: "Sort the stairs to go into the library!",
+                    speed:window.speeds.fast
+                  },
+                  // {
+                  //   string: "Sort the stairs to go into the library At elementum eu facilisis sed odio. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Pellentesque diam volutpat commodo sed",
+                  //   speed:window.speeds.fast
+                  // }
+                ]
+              },
             ]
           }
         ]

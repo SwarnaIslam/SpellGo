@@ -6,11 +6,12 @@ class Person extends GameObject {
 
     this.isPlayerControlled = config.isPlayerControlled || false;
 
+    this.speed=2
     this.directionUpdate = {
-      "up": ["y", -1],
-      "down": ["y", 1],
-      "left": ["x", -1],
-      "right": ["x", 1],
+      "up": ["y", -this.speed],
+      "down": ["y", this.speed],
+      "left": ["x", -this.speed],
+      "right": ["x", this.speed],
     }
   }
 
@@ -45,7 +46,7 @@ class Person extends GameObject {
 
       //Ready to walk!
       state.map.moveWall(this.x+16, this.y+32, this.direction);
-      this.movingProgressRemaining = 16;
+      this.movingProgressRemaining = 16/this.speed;
       this.updateSprite(state);
     }
 

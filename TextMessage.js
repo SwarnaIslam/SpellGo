@@ -1,7 +1,8 @@
 class TextMessage {
-  constructor({ text, onComplete }) {
-    this.text = text;
-    this.onComplete = onComplete;
+  constructor(config) {
+    this.text = config.text;
+    this.speed=config.speed;
+    this.onComplete = config.onComplete;
     this.element = null;
   }
 
@@ -17,8 +18,9 @@ class TextMessage {
 
     //Init the typewriter effect
     this.revealingText = new RevealingText({
-      element: this.element.querySelector(".TextMessage_p"),
-      text: this.text
+      element: this.element,
+      text: this.text,
+      speed:this.speed
     })
 
     this.element.querySelector("button").addEventListener("click", () => {

@@ -54,6 +54,7 @@ class OverworldEvent {
 
     const message = new TextMessage({
       text: this.event.text,
+      speed:this.event.speed,
       onComplete: () => resolve()
     })
     message.init( document.querySelector(".game-container") )
