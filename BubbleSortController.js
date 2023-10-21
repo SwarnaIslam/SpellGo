@@ -79,7 +79,10 @@ class BubbleSortController {
     }
 
     getHeight(){
-        return [this.ctx.stairs[this.ctx.currentLight].height,this.ctx.stairs[this.ctx.currentLight+1].height]
+        const h1=this.ctx.stairs[this.ctx.currentLight].getAt(0).height;
+        const h2=this.ctx.stairs[this.ctx.currentLight+1].getAt(0).height;
+
+        return [h1,h2]
     }
 
     async guiding(){

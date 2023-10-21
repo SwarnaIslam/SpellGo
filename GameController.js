@@ -24,6 +24,7 @@ class GameController extends Phaser.Scene {
         this.load.image("selected-right-btn","images/selectedRight.png");
         this.load.image("redLid","images/redLid.png");
         this.load.image("blueLid","images/blueLid.png");
+        this.load.image("catFace","images/catFace.png");
         this.load.spritesheet("lives","images/lives.png",{
             frameWidth:128,
             frameHeight:98

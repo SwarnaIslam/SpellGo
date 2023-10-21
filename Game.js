@@ -69,6 +69,15 @@ function preload(){
         frameWidth:160,
         frameHeight:160
     });
+    this.load.spritesheet("catFace1","images/catFace1.png",{
+        frameWidth:81,
+        frameHeight:38
+    });
+    this.load.spritesheet("catFace2","images/catFace2.png",{
+        frameWidth:81,
+        frameHeight:37
+    });
+    this.load.image("catPaw", "images/catPaw.png");
     this.load.bitmapFont("pixelFont", "/images/font/font.png", "images/font/font.xml");
     this.load.bitmapFont("pixelFont_black", "/images/font/font-black.png", "images/font/font.xml");
     this.load.image("wizard", "images/wizard.jpg");
@@ -88,11 +97,23 @@ function preload(){
 }
 function create() {
     this.anims.create({
+        key:"catFace1",
+        frames:this.anims.generateFrameNumbers("catFace1"),
+        frameRate:1,
+        repeat:-1
+    });
+    this.anims.create({
+        key:"catFace2",
+        frames:this.anims.generateFrameNumbers("catFace2"),
+        frameRate:1,
+        repeat:-1
+    });
+    this.anims.create({
         key:"standingDummy",
         frames:this.anims.generateFrameNumbers("dummy"),
         frameRate:2,
         repeat:-1
-    })
+    });
     this.anims.create({
         key:"ReduceLive",
         frames: this.anims.generateFrameNumbers("lives"),
