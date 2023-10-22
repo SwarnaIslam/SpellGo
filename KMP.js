@@ -179,7 +179,7 @@ class KMP extends Phaser.Scene{
         this.cameras.main.setBackgroundColor('#86CF74'); 
 
         this.event=new UserEventHandler({ctx:this, fontSize:"15px"})
-        this.event.createRestartBtn(160,10);
+        this.event.init();
 
         this.steps=20;
         this.rewind=new Rewind({ctx:this})

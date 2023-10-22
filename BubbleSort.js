@@ -75,7 +75,7 @@ class BubbleSort extends Phaser.Scene {
         this.scene.start('game_over',{key:'bubbleSort'});
     }
     create() {
-        this.cameras.main.setBackgroundColor('#fff'); 
+        this.cameras.main.setBackgroundColor('#000000'); 
         this.createStair();
         this.createLight();
         this.createLives();
@@ -84,7 +84,7 @@ class BubbleSort extends Phaser.Scene {
     
         this.spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         this.event=new UserEventHandler({ctx:this})
-        this.event.createRestartBtn(config.width-70,config.height-40);
+        this.event.init()
         this.controller = new BubbleSortController(this);
         this.controller.guiding();
     }

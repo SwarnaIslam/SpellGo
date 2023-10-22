@@ -88,7 +88,7 @@ class MergeSort extends Phaser.Scene {
         this.add.image(config.width/2-40,config.height - this.startFrom+this.nodeHeight-10,'timber');
 
         this.event=new UserEventHandler({ctx:this, fontSize:"15px"})
-        this.event.createRestartBtn(160,10);
+        this.event.init();
         this.startSorting();
     }
     async startSorting(){

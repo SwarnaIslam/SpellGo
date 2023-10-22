@@ -77,6 +77,7 @@ function preload(){
         frameWidth:81,
         frameHeight:37
     });
+    this.load.image("pause", "images/pause.png");
     this.load.image("catPaw", "images/catPaw.png");
     this.load.bitmapFont("pixelFont", "/images/font/font.png", "images/font/font.xml");
     this.load.bitmapFont("pixelFont_black", "/images/font/font-black.png", "images/font/font.xml");

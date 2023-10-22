@@ -415,7 +415,7 @@ class Dijkstra extends Phaser.Scene{
             }
         });
         this.event=new UserEventHandler({ctx:this, fontSize:"15px"})
-        this.event.createRestartBtn(160,10);
+        this.event.init();
 
         (new MessageBox({ctx:this})).startTyping(window.guidance.dijkstra.minSrc);
         

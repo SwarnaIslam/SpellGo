@@ -30,7 +30,7 @@ class Huffman1 extends Phaser.Scene {
         this.cameras.main.setBackgroundColor('#9ffcfb');
 
         this.event=new UserEventHandler({ctx:this, fontSize:"15px"})
-        this.event.createRestartBtn(160,10);
+        this.event.init();
         this.offset = config.width / this.frequency.length;
 
         this.steps=22;

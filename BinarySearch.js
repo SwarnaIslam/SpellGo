@@ -126,7 +126,7 @@ class BinarySearch extends Phaser.Scene {
     create() {
         this.createLibrary();
         this.event=new UserEventHandler({ctx:this, fontColor:"#ffffff"})
-        this.event.createRestartBtn(160,10);
+        this.event.init();
 
         this.left = this.createButton(config.width / 2 - 25, config.height - 80, "left-btn");
         this.right = this.createButton(this.left.x + this.left.displayWidth + 10, config.height - 80, "right-btn");
