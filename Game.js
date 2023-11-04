@@ -82,7 +82,7 @@ function preload(){
     this.load.bitmapFont("pixelFont", "/images/font/font.png", "images/font/font.xml");
     this.load.bitmapFont("pixelFont_black", "/images/font/font-black.png", "images/font/font.xml");
     this.load.image("wizard", "images/wizard.jpg");
-    this.load.image("library_interior","images/library_inside.png");
+    this.load.image("library_interior","images/lib_interior.jpeg");
     this.load.image("speech","images/speech_bubble.png");
     this.load.image("village_map","images/wizard_village_map.png");
     this.load.image("unselectedVillage","images/unSelectedBanner.png");

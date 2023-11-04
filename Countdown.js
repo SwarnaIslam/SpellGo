@@ -10,7 +10,7 @@ class CountdownController {
 
 	start() {
 		this.stop()
-		this.label = this.ctx.add.text(10, 10, "" + this.duration, {
+		this.label = this.ctx.add.text(70, 30, "" + this.duration, {
             fontFamily:"CustomFont",
 			color:this.fontColor,
             fontSize:20

@@ -1,9 +1,11 @@
 class MessageBox {
   constructor(con) {
-    const x=con.x||0;
-    const y=con.y||config.height*0.78;
-    const width=con.width||config.width;
+
+    const width=con.width||1000;
     const height=con.height||config.height*0.22;
+
+    const x=con.x|| config.width/2-width/2;
+    const y=con.y||config.height*0.76;
 
     this.ctx = con.ctx;
     this.messageDisplayed = false;
@@ -13,9 +15,10 @@ class MessageBox {
 
     if(!con.transparent){
       const graphics = this.ctx.add.graphics();
-      graphics.fillStyle(0xf1c27d, 1);
-      graphics.fillRoundedRect(0, 0, width, height, 20);
-
+      graphics.fillStyle(0xFFF2F9, 1);
+      graphics.lineStyle(4, 0x1F4685);
+      graphics.fillRoundedRect(0, 0, width, height, 0);
+      graphics.strokeRoundedRect(0, 0, width, height, 0);
       this.messageBox.add(graphics);
 
       this.image = this.ctx.add.image(10, 10, "wizard");
@@ -27,9 +30,9 @@ class MessageBox {
     this.messageBox.visible = true;
 
     this.messageText = this.ctx.add.text(height, 22, '', {
-      fontFamily: con.fontFamily||'CustomFont',
+      fontFamily: con.fontFamily||'Quantico',
       fontSize: con.fontSize||20,
-      color: con.fontColor||'#000000',
+      color: con.fontColor||'#1F4685',
       wordWrap: {
         width: width - 150 
       }

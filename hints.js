@@ -82,9 +82,9 @@ window.hints = {
             {text:"Better time travel back and fix my mistake!",speed: window.speeds.normal}
         ],
         skipErr: [
-            {text:"I must forgot something", speed:window.speeds.normal},
+            {text:"Oh no! Two steps are not sorted yet", speed:window.speeds.normal},
             {text:"...",speed:window.speeds.pause},
-            {text:"I should think again.", speed: window.speeds.normal}
+            {text:"Should they be skipped?", speed: window.speeds.normal}
         ],
         equalErr: [
             

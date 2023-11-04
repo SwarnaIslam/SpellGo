@@ -48,7 +48,8 @@ const utils = {
       array[j] = temp;
     }
   },
-  getLantern(x,y){
+  getLantern(x,y, name=""){  
+      
     return new GameObject({
       x:utils.withGrid(x),
       y:utils.withGrid(y),

@@ -10,13 +10,17 @@ body{
 }
 @font-face {
     font-family: PressStart;
-    src: url('images/font/PressStart2P-Regular.ttf') ;
+    src: url('font/PressStart2P-Regular.ttf') ;
 }
 @font-face {
     font-family: CustomFont;
-    src: url('images/font/Kanit-Regular.ttf');
+    src: url('font/Kanit-Regular.ttf');
 }
 @font-face {
     font-family: WizardFont;
-    src: url('images/font/JollyLodger-Regular.ttf');
+    src: url('font/JollyLodger-Regular.ttf');
+}
+@font-face {
+    font-family: Quantico;
+    src: url('font/Quantico-Regular.ttf');
 }

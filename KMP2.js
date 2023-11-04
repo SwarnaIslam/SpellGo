@@ -122,7 +122,8 @@ class KMP2{
                             reward: this.reward,
                             todo: [
                                 { text: "You have done very well!", speed: window.speeds.normal }
-                            ]
+                            ],
+                            key: "kmp"
                     })
                 }
             }
